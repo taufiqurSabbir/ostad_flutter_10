@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'flutter_class_1.dart';
 import 'flutter_class_2.dart';
+import 'form_login.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'batch 10 flutter',
-      home: FlutterClass2(),
+      home: LoginPage(),
     );
   }
 }
