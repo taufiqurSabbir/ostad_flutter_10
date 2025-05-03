@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ostad_batch_10/statefull_class.dart';
 
 import 'flutter_class_1.dart';
 import 'flutter_class_2.dart';
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'batch 10 flutter',
-      home: LoginPage(),
+      home: SateFullClass(),
     );
   }
 }
