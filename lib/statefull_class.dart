@@ -17,7 +17,6 @@ class _SateFullClassState extends State<SateFullClass> {
     super.initState();
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,76 +24,98 @@ class _SateFullClassState extends State<SateFullClass> {
         title: Text("Stateful Class"),
         backgroundColor: Colors.deepPurple,
       ),
-
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(counter.toString(),
-            style: TextStyle(
-              fontSize: 70,
-              color: Colors.deepPurple,
+            Text(
+              counter.toString(),
+              style: TextStyle(
+                fontSize: 70,
+                color: Colors.deepPurple,
+              ),
             ),
+            SizedBox(
+              height: 50,
             ),
-
-            SizedBox(height: 50,),
-
-
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
                     width: 180,
-                    child: ElevatedButton(onPressed: (){
-                      setState(() {
-                        counter++;
-                      });
+                    child: ElevatedButton(
+                        onPressed: () {
+                          setState(() {
+                            counter++;
+                          });
 
-
-                      print('counter: $counter');
-
-                    }, child: Text('+',style: TextStyle(
-                      fontSize: 40,
-                      color: Colors.white,
-                    ),))),
-                SizedBox(width: 10,),
+                          print('counter: $counter');
+                        },
+                        child: Text(
+                          '+',
+                          style: TextStyle(
+                            fontSize: 40,
+                            color: Colors.white,
+                          ),
+                        ))),
+                SizedBox(
+                  width: 10,
+                ),
                 SizedBox(
                     width: 180,
-                    child: ElevatedButton(onPressed: (){
-                      setState(() {
-                        counter--;
-                      });
-                      print('counter: $counter');
-
-
-                    }, child: Text('-',style: TextStyle(
-                      fontSize: 40,
-                      color: Colors.white,
-                    ),))),
+                    child: ElevatedButton(
+                        onPressed: () {
+                          setState(() {
+                            counter--;
+                          });
+                          print('counter: $counter');
+                        },
+                        child: Text(
+                          '-',
+                          style: TextStyle(
+                            fontSize: 40,
+                            color: Colors.white,
+                          ),
+                        ))),
               ],
             ),
-
-
-
-            SizedBox(height: 50,),
-
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                cityCard(image: 'https://www.amny.com/wp-content/uploads/2022/08/GettyImages-523538287.jpg?quality=51', city: 'New York City ',),
-                SizedBox(width: 10,),
-                cityCard(image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYV3EfsaWMn0aXHxhb5FuXZlJWEbIjUPwSyg&s', city: 'Dhaka',),
-                SizedBox(width: 10,),
-                cityCard(image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReR9Uns1_rIDNosFY9z7YaB9lGyzOpfd8MXQ&s', city: 'maldives',),
-                SizedBox(width: 10,),
-              ],
+            SizedBox(
+              height: 50,
             ),
-          )
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  cityCard(
+                    image:
+                        'https://www.amny.com/wp-content/uploads/2022/08/GettyImages-523538287.jpg?quality=51',
+                    city: 'New York City ',
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  cityCard(
+                    image:
+                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYV3EfsaWMn0aXHxhb5FuXZlJWEbIjUPwSyg&s',
+                    city: 'Dhaka',
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  cityCard(
+                    image:
+                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReR9Uns1_rIDNosFY9z7YaB9lGyzOpfd8MXQ&s',
+                    city: 'maldives',
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
     );
   }
 }
-

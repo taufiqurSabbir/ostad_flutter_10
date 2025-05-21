@@ -5,6 +5,8 @@ import 'flutter_class_1.dart';
 import 'flutter_class_2.dart';
 import 'form_login.dart';
 import 'module 9 class 3.dart';
+import 'module_11/class_1/alert/alert.dart';
+import 'module_11/class_1/lifeCycle.dart';
 import 'module_9_class_2.dart';
 import 'module_9_mediaQuery.dart';
 import 'module_9_todo.dart';
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child: const Module9Class3(),
+      child: const Alert(),
     );
   }
 
