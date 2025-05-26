@@ -8,6 +8,7 @@ import 'module 9 class 3.dart';
 import 'module_11/class_1/alert/alert.dart';
 import 'module_11/class_1/lifeCycle.dart';
 import 'module_11/class_2/calculatorApp.dart';
+import 'module_11/class_3/waterTracker.dart';
 import 'module_9_class_2.dart';
 import 'module_9_mediaQuery.dart';
 import 'module_9_todo.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child: const CalculatorApp(),
+      child: const WaterTracker(),
     );
   }
 
