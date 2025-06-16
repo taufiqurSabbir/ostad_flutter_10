@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "553037c4-472a-44f2-8cf1-f0c3ebb445d5",
+		"name": "CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21636389"
+	},
+	"item": [
+		{
+			"name": "CreateProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"ProductName\": \"ef\",\r\n        \"ProductCode\": 256,\r\n        \"Img\": \"dwq\",\r\n        \"Qty\": 45,\r\n        \"UnitPrice\": 14,\r\n        \"TotalPrice\": 888\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/CreateProduct",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"CreateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"ProductName\": \"rew\",\r\n        \"ProductCode\": 23345243,\r\n        \"Img\": \"acbc\",\r\n        \"Qty\": 123,\r\n        \"UnitPrice\": 123,\r\n        \"TotalPrice\": 123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/UpdateProduct/65abe919f68794d36c5b7ffa",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"UpdateProduct",
+						"65abe919f68794d36c5b7ffa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/ReadProduct",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"ReadProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadProductById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/ReadProductById/65abeaddf211d368b013a630",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"ReadProductById",
+						"65abeaddf211d368b013a630"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProductById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/DeleteProduct/65abe8b31e27100ba914f2e5",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"DeleteProduct",
+						"65abe8b31e27100ba914f2e5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseUrl",
+			"value": "http://35.73.30.144:2008/api/v1",
+			"type": "string"
+		}
+	]
+}
